@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  experimental: {
+    appDir: true, // 👈 Required for using the /app directory
+  },
   eslint: {
     ignoreDuringBuilds: true,
   },
